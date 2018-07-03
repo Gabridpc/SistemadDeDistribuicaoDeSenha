@@ -16,5 +16,10 @@ public class Senha {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
+	
+	public Senha(String prior, int num) {
+		this.prioridade = prior;
+		this.numero = num;
+	}
 		
 }

@@ -9,9 +9,7 @@ public class Sistema {
 		int num;
 		num = 0001;
 		
-		Senha senha1 = new Senha();
-		senha1.setPrioridade(prior);
-		senha1.setNumero(num);
+		Senha senha1 = new Senha(prior, num);
 		System.out.println("Sua senha: "+senha1.getPrioridade()+senha1.getNumero());
 
 	}
