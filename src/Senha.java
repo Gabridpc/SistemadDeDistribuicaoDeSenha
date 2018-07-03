@@ -1,12 +1,12 @@
 public class Senha {
 
-	private char prioridade;
+	private String prioridade;
 	private int numero;
 	
-	public char getPrioridade() {
+	public String getPrioridade() {
 		return prioridade;
 	}
-	public void setPrioridade(char prioridade) {
+	public void setPrioridade(String prioridade) {
 		this.prioridade = prioridade;
 	}
 	
