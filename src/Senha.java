@@ -17,9 +17,9 @@ public class Senha {
 		this.numero = numero;
 	}
 	
-	public Senha(String prior, int num) {
-		this.prioridade = prior;
-		this.numero = num;
+	public Senha(String prioridade, int numero) {
+		this.prioridade = prioridade;
+		this.numero = numero;
 	}
 		
 }
