@@ -3,21 +3,7 @@ import java.util.Queue;
 
 public class Sistema {
 	
-	private static String nomeiaSenha(String prior, int num) {
-		String sSenha = "";
-		if(num<1000) {
-			sSenha = "0";
-			if(num<100) {
-				sSenha = sSenha + "0";
-				if(num<10) {
-					sSenha = sSenha + "0";
-				}
-			}
-		}
-		sSenha = prior + sSenha + Integer.toString(num);
-		return sSenha;
-	}
-
+	
 	public static void main(String[] args) {
 	
 		String prioridade;
@@ -32,7 +18,7 @@ public class Sistema {
 		Queue<String> filaNormal= new LinkedList<String>();
 		Queue<String> filaPrioridade= new LinkedList<String>();
 		
-		String sSenha = Sistema.nomeiaSenha(senha1.getPrioridade(),senha1.getNumero());
+		String sSenha = Monitor.nomeiaSenha(senha1.getPrioridade(),senha1.getNumero());
 		
 		if(senha1.getPrioridade() == "P") {
 			filaPrioridade.add(sSenha);
